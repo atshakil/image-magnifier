@@ -1,0 +1,41 @@
+{
+  "name": "image-magnifier",
+  "version": "0.1.0",
+  "description": "Image magnifier React component",
+  "source": "src/index.tsx",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build",
+    "build:tsc": "yarn build:tsc:esm && yarn build:tsc:cjs",
+    "build:tsc:esm": "tsc",
+    "build:tsc:cjs": "tsc --module commonjs --outDir dist/cjs"
+  },
+  "repository": "https://github.com/atshakil/image-magnifier",
+  "author": "Tahmid Shakil <at.shakil.92@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/packager-ts": "2.10.0",
+    "@parcel/transformer-sass": "2.10.0",
+    "@parcel/transformer-typescript-types": "2.10.0",
+    "@types/react": "^18.2.28",
+    "@types/react-dom": "^18.2.13",
+    "parcel": "^2.10.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "classnames": "^2.0.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "files": [
+    "/lib"
+  ],
+  "dependencies": {
+    "classnames": "^2.0.0"
+  }
+}
